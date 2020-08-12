@@ -19,7 +19,10 @@ h1 {
 }
 
 #burger {
-    max-height: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
 }
 
 #overlay {
