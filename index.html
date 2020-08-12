@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Votre recette de burger</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <img src="imgBurger.png" alt="Logo du burger" id="logo">
+      <hr>
+      <form action="submission.html" method="POST">
+        <h1>Créer votre Burger!</h1>
+					<section class="protein">
+          <label for="patty">Quel type de galette souhaiteriez -vous ?</label>
+    			<input type="text" name="patty" id="patty">
+        </section>
+        <hr>
+        <section class="patties">
+          <label for="amount">Combien de galettes souhaitez-vous ?</label>
+          <input type="number" name="amount" id="amount">
+        </section>
+        <hr>
+        <section class="cooked">
+          <label for="doneness">Quelle cuisson ?</label>
+          <br>
+          <span>Saignant</span>
+          <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
+          <span>Très cuit</span>
+        </section>
+        <hr>
+        <section class="toppings">
+          <span>Quelle garniture souhaiteriez-vous ?</span>
+          <br>
+          <input type="checkbox" name="topping" id="lettuce" value="lettuce">
+          <label for="lettuce">Laitue</label>
+          <input type="checkbox" name="topping" id="tomato" value="tomato">
+          <label for="tomato">Tomate</label>
+          <input type="checkbox" name="topping" id="onion" value="onion">
+          <label for="onion">Oignon</label>
+        </section>
+        <hr>
+        <section class="cheesy">
+          <span>Voulez vous ajouter du fromage ?</span>
+          <br>
+          <input type="radio" name="cheese" id="yes" value="yes">
+          <label for="yes">Oui</label>
+          <input type="radio" name="cheese" id="no" value="no">
+          <label for="no">Non</label>
+        </section>
+        <hr>
+        <section class="bun-type">
+          <label for="bun">Quel type de pain souhaiteriez-vous ?</label>
+          <select name="bun" id="bun">
+            <option value="sesame">Sésame</option>
+            <option value="potatoe">Pomme de terre</option>
+            <option value="pretzel"Bretzel</option>
+          </select>
+        </section>
+        <hr>
+        <section class="sauce-selection">
+          <label for="sauce">Quelle sauce souhaiteriez-vous ?</label>
+          <input list="sauces" id="sauce" name="sauce">
+          <datalist id="sauces">
+            <option value="ketchup"></option>
+            <option value="mayo"></option>
+            <option value="mustard"></option>
+          </datalist>
+        </section>
+        <hr>
+        <section class="extra-info">
+          <label for="extra">Autre chose à ajouter ?</label>
+          <br>
+          <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+        </section>
+        <hr>
+
+        <section class="submission">
+          <input type="submit" value="Valider">
+        </section>
+      </form>
+    </section>
+  </body>
+</html>
