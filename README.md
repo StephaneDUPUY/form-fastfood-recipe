@@ -1,6 +1,6 @@
 # form-fastfood-recipe
 
-Recipe to prepare burger form based
+Recipe to prepare burger form based with submission redirection
 
 ---
 
